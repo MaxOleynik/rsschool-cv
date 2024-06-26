@@ -28,3 +28,53 @@ In addition to studying, I also have a hobby – playing guitar. Music has alway
 -   VSCode
 
 ---
+
+## Code example
+
+Find the unique number:
+
+```JavaScript
+function findUniq(arr) {
+    const set = new Set(arr);
+
+    for(let item of set){
+      let count = 0;
+      for(let num of arr){
+        if(item === num){
+            count++;
+        }
+      }
+      if(count === 1){
+          return item;
+      }
+    }
+}
+```
+
+Factorial recursion:
+
+```JavaScript
+function factorial(n){
+    if(n === 0){
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+
+```
+
+---
+
+## Courses
+
+-   Udemy (Web-developer, JavaScript + React)
+-   CS50
+-   FreeCodeCamp
+
+---
+
+## Language
+
+Russian - native
+English - in process
