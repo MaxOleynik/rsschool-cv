@@ -4,11 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CV Page</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#about">About me</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#code">Code example</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#courses">Courses</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#lang">Language</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </nav>
 
+            <div class="header__wrapper">
+                <h1 class="header__title">Maxim Oleynik</h1>
+                <img class="header__avatar" src="avatar.jpg" alt="avatar" width="300" height="300" loading="lazy">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="about" id="about">
+                <h2 class="about__title">About me</h2>
+                <p class="about__description">
+                    Hello, my name is Maxim and I am 29 years old. I study front-end development and enjoy this field
+                    because it combines technology with creativity in design. I am motivated by the results of my work
+                    and the possibility to create something new.
+
+                    In addition to studying, I also have a hobby – playing guitar. Music has always been an important
+                    part of my life, providing a way to relax and unwind after a hard day. Combining my hobbies and
+                    studies allows me to take a break from challenging tasks and approach them later with a fresh
+                    perspective, as well as helps me maintain motivation.
+                </p>
+            </section>
+
+            <section class="contacts" id="contacts">
+                <h2 class="contacts__title">Contacts</h2>
+                <ul class="contacits__list">
+                    <li class="contacts__item">
+                        <span>Phone:</span>
+                        <a href="tel:+79298495415">+7 929 849 5415</a>
+                    </li>
+                    <li class="contacts__item">
+                        <span>E-mail:</span>
+                        <a href="mailto:oleynikmaxim0@gmail.com">oleynikmaxim0@gmail.com</a>
+                    </li>
+                    <li class="contacts__item">
+                        <span>Telegram:</span>
+                        <a href="https://t.me/Ghost_prozak">@Ghost_prozak</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="skills" id="skills">
+                <h2 class="skills__tltle">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item">HTML (Forms, Semantic tags)</li>
+                    <li class="skills__item">CSS (Flex-box, Grid, Preprocessor(SCSS, SASS))</li>
+                    <li class="skills__item">JavaScript (Basic, In process)</li>
+                    <li class="skills__item">Git</li>
+                    <li class="skills__item">Figma</li>
+                    <li class="skills__item">VSCode</li>
+                </ul>
+            </section>
+
+            <section class="code" id="code">
+                <h2 class="code__title">Code example</h2>
+                <pre>
+                    Find the unique number:
+                    <code>
+                        function findUniq(arr) {
+                            const set = new Set(arr);
+                        
+                            for(let item of set){
+                              let count = 0;
+                              for(let num of arr){
+                                if(item === num){
+                                    count++;
+                                }
+                              }
+                              if(count === 1){
+                                  return item;
+                              }
+                            }
+                        }
+                    </code>
+
+                    Factorial recursion:
+                    <code>
+                        function factorial(n){
+                            if(n === 0){
+                                return 1;
+                            }
+                        
+                            return n * factorial(n - 1);
+                        }                        
+                    </code>
+                </pre>
+            </section>
+
+            <section class="courses" id="courses">
+                <h2 class="courses__title">Courses</h2>
+                <ul class="courses__list">
+                    <li class="courses__item">Udemy (Web-developer, JavaScript + React) in process</li>
+                    <li class="courses__item">CS50</li>
+                    <li class="courses__item">FreeCodeCamp</li>
+                </ul>
+            </section>
+
+            <section class="lang" id="lang">
+                <h2 class="lang__title">Language</h2>
+                <ul class="lang__list">
+                    <li class="lang__item">Russian - native</li>
+                    <li class="lang__item">English - in process</li>
+                </ul>
+            </section>
+
+            <section class="projects" id="projects">
+                <h2 class="projects__tlte">My projects</h2>
+                <div class="projects__wrap">
+                    <p class="projects__description">Bike center support page</p>
+                    <a class="projects__link" href="https://tiny-kitsune-f384f8.netlify.app/">Bike center preview</a>
+                    <img class="project__prev" src="bike-center.jpg" alt="bike center">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__git git">
+                    <img class="git__img" src="github.svg" alt="github">
+                    <a class="git__link" href="https://github.com/MaxOleynik">My GitHub</a>
+                </div>
+                <div class="footer__rsschool rsschool">
+                    <img class="rsschool__img" src="rs-school-logo.svg" alt="rsschool logo">
+                    <a class="rsschool__link" href="https://rs.school/courses/javascript-ru">JavaScript / Front-end
+                        Course</a>
+                </div>
+            </div>
+            <p class="footer__year">2024</p>
+        </div>
+    </footer>
 </body>
 
 </html>
