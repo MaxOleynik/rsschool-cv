@@ -123,6 +123,7 @@ h2 {
 }
 
 .contacts__item > a {
+	text-decoration: underline;
 	transition: 0.3s all;
 }
 
@@ -153,6 +154,7 @@ pre {
 }
 
 .projects__link {
+	text-decoration: underline;
 	transition: 0.3s all;
 }
 .projects__link:hover {
@@ -184,6 +186,7 @@ pre {
 .rsschool__link {
 	font-size: 18px;
 	transition: 0.3s all;
+	text-decoration: underline;
 }
 
 .rsschool__img {
