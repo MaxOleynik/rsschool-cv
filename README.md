@@ -1,4 +1,4 @@
 # rsschool-cv
 
-https://MaxOleynik.github.io/rsschool-cv/cv
-https://preeminent-truffle-eb10c2.netlify.app
+CV Markdown: https://MaxOleynik.github.io/rsschool-cv/cv
+CV Deploy: https://preeminent-truffle-eb10c2.netlify.app
